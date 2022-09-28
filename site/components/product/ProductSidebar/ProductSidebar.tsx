@@ -52,10 +52,6 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
         className="pb-4 break-words w-full max-w-xl"
         html={product.descriptionHtml || product.description}
       />
-      <div className="flex flex-row justify-between items-center">
-        <Rating value={4} />
-        <div className="text-accent-6 pr-1 font-medium text-sm">36 reviews</div>
-      </div>
       <div>
         {process.env.COMMERCE_CART_ENABLED && (
           <Button
@@ -73,15 +69,8 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
         )}
       </div>
       <div className="mt-6">
-        <Collapse title="Care">
-          This is a limited edition production run. Printing starts when the
-          drop ends.
-        </Collapse>
-        <Collapse title="Details">
-          This is a limited edition production run. Printing starts when the
-          drop ends. Reminder: Bad Boys For Life. Shipping may take 10+ days due
-          to COVID-19.
-        </Collapse>
+        <Collapse title="Care">{product.description}</Collapse>
+        <Collapse title="Details">{product.specification}</Collapse>
       </div>
     </div>
   )
