@@ -39,7 +39,7 @@ const UserNav: React.FC<{
   return (
     <nav className={cn(s.root, className)}>
       <ul className={s.list}>
-        {true && (
+        {false && (
           <li className={s.item}>
             <Button
               className={s.item}
@@ -66,7 +66,7 @@ const UserNav: React.FC<{
             </Link>
           </li>
         )}
-        {true && (
+        {false && (
           <li className={s.item}>
             <Dropdown>
               <DropdownTrigger>
