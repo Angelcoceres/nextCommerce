@@ -9,6 +9,7 @@ import {
   selectDefaultOptionFromProduct,
   SelectedOptions,
 } from '../helpers'
+import { redirect } from 'next/dist/server/api-utils'
 
 interface ProductSidebarProps {
   product: Product
@@ -16,6 +17,9 @@ interface ProductSidebarProps {
 }
 
 const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
+  function redirect() {
+    window.open('http://localhost:3001/', '_self')
+  }
   const addItem = useAddItem()
   const { openSidebar, setSidebarView } = useUI()
   const [loading, setLoading] = useState(false)
@@ -53,24 +57,22 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
         html={product.descriptionHtml || product.description}
       />
       <div>
-        {process.env.COMMERCE_CART_ENABLED && (
+        {true && (
           <Button
-            aria-label="Add to Cart"
+            aria-label="Comprar"
             type="button"
             className={s.button}
-            onClick={addToCart}
+            onClick={() => redirect()}
             loading={loading}
             disabled={variant?.availableForSale === false}
           >
-            {variant?.availableForSale === false
-              ? 'Not Available'
-              : 'Add To Cart'}
+            {variant?.availableForSale === false ? 'No disponible' : 'Comprar'}
           </Button>
         )}
       </div>
       <div className="mt-6">
-        <Collapse title="Care">{product.description}</Collapse>
-        <Collapse title="Details">{product.specification}</Collapse>
+        <Collapse title="Descripcion Corta">{product.description}</Collapse>
+        <Collapse title="Detalles">{product.specification}</Collapse>
       </div>
     </div>
   )

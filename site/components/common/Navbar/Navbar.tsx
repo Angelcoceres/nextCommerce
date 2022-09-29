@@ -26,7 +26,7 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
           </Link>
           <nav className={s.navMenu}>
             <Link href="/search">
-              <a className={s.link}>All</a>
+              <a className={s.link}>Todo</a>
             </Link>
             {links?.map((l) => (
               <Link href={l.href} key={l.href}>
@@ -35,20 +35,16 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
             ))}
           </nav>
         </div>
-        {process.env.COMMERCE_SEARCH_ENABLED && (
-          <div className="justify-center flex-1 hidden lg:flex">
-            <Searchbar />
-          </div>
-        )}
+        <div className="justify-center flex-1 hidden lg:flex">
+          <Searchbar />
+        </div>
         <div className="flex items-center justify-end flex-1 space-x-8">
           <UserNav />
         </div>
       </div>
-      {process.env.COMMERCE_SEARCH_ENABLED && (
-        <div className="flex pb-4 lg:px-6 lg:hidden">
-          <Searchbar id="mobile-search" />
-        </div>
-      )}
+      <div className="flex pb-4 lg:px-6 lg:hidden">
+        <Searchbar id="mobile-search" />
+      </div>
     </Container>
   </NavbarRoot>
 )

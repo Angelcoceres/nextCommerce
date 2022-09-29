@@ -15,10 +15,10 @@ import getSlug from '@lib/get-slug'
 import rangeMap from '@lib/range-map'
 
 const SORT = {
-  'trending-desc': 'Trending',
-  'latest-desc': 'Latest arrivals',
-  'price-asc': 'Price: Low to high',
-  'price-desc': 'Price: High to low',
+  'trending-desc': 'Tendencia',
+  'latest-desc': 'Nuevos ingresos',
+  'price-asc': 'Precio: Bajo a alto',
+  'price-desc': 'Precio: Alto a bajo',
 }
 
 import {
@@ -128,7 +128,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Categories
+                          Categorias
                         </a>
                       </Link>
                     </li>
@@ -229,7 +229,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Designers
+                          Diseñadores
                         </a>
                       </Link>
                     </li>
@@ -279,10 +279,10 @@ export default function Search({ categories, brands }: SearchPropsType) {
                       hidden: !data.found,
                     })}
                   >
-                    Showing {data.products.length} results{' '}
+                    Mostrando {data.products.length} resultados{' '}
                     {q && (
                       <>
-                        for "<strong>{q}</strong>"
+                        para "<strong>{q}</strong>"
                       </>
                     )}
                   </span>
@@ -294,21 +294,23 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   >
                     {q ? (
                       <>
-                        There are no products that match "<strong>{q}</strong>"
+                        No se encontraron productos con el nombre "
+                        <strong>{q}</strong>"
                       </>
                     ) : (
                       <>
-                        There are no products that match the selected category.
+                        No se encontraron productos con el nombre en la
+                        categoria seleccionada.
                       </>
                     )}
                   </span>
                 </>
               ) : q ? (
                 <>
-                  Searching for: "<strong>{q}</strong>"
+                  Buscando: "<strong>{q}</strong>"
                 </>
               ) : (
-                <>Searching...</>
+                <>Buscando...</>
               )}
             </div>
           )}
@@ -394,7 +396,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          Relevance
+                          Relevante
                         </a>
                       </Link>
                     </li>

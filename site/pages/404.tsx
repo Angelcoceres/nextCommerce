@@ -24,9 +24,9 @@ export async function getStaticProps({
 export default function NotFound() {
   return (
     <div className="max-w-2xl mx-8 sm:mx-auto py-20 flex flex-col items-center justify-center fit">
-      <Text variant="heading">Not Found</Text>
+      <Text variant="heading">No Encontrado</Text>
       <Text className="">
-        The requested page doesn't exist or you don't have access to it.
+        La página solicitada no existe o no tienes acceso a ella.
       </Text>
     </div>
   )

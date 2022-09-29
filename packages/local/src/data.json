@@ -10,22 +10,23 @@
       "descriptionHtml": "<p><span>Batidora de mano,&nbsp;</span><strong>BM-2608</strong><span>&nbsp;, 5 velocidades que permiten lograr tus mezclas más consistentes y homogéneas. Función turbo para punto nieve, merengue, etc. Potente Motor de 500W.Ganchos amasadores y batidores. Botón expulsor para accesorios amasador y batidor. Mango de diseño ergonómico muy cómodo al agarre, brinda mayor control de la máquina.</strong></p>",
       "description": "Mango de diseño ergonómico, brinda mayor control de la máquina. 5 Velocidades.",
       "specification": "Material: Plástico / Metal, Potencia: 500W, Alimentación: 220V 50Hz, Funciones: 5 velocidades y funciónturbo / Bate / Amasa,Tipo de Montaje: En mano, Accesorios incluidos: Ganchos batidores y amasadores, Tipo: Batidora de Mano, Niveles de potencia:5 velocidades, Temporizador: No, Financiacion: 6.",
+      "rate": 5,
       "images": [
         {
           "url": "/assets/batidorabm2608.png",
-          "altText": "Shirt",
+          "altText": "Batidora",
           "width": 1000,
           "height": 1000
         },
         {
           "url": "/assets/batidorabm2608-1.png",
-          "altText": "Shirt",
+          "altText": "Batidora",
           "width": 1000,
           "height": 1000
         },
         {
           "url": "/assets/batidorabm2608-2.png",
-          "altText": "Shirt",
+          "altText": "Batidora",
           "width": 1000,
           "height": 1000
         }
@@ -60,7 +61,7 @@
         },
         {
           "id": "option-size",
-          "displayName": "Size",
+          "displayName": "Tamaño",
           "values": [
             {
               "label": "S"
@@ -77,28 +78,31 @@
     },
     {
       "id": "Z2lkOi8vc2hvcGlmeS9Qcm9ksdWN0LzU0NDczMjUwMjQ0MjA=",
-      "name": "Lightweight Jacket",
+      "name": "Licuadora de Mesa 1,5 Lts 650w Negro LC-2007",
       "vendor": "Next.js",
-      "path": "/lightweight-jacket",
-      "slug": "lightweight-jacket",
-      "price": { "value": 249.99, "currencyCode": "USD" },
-      "descriptionHtml": "<p><span>Show off your love for Next.js and Vercel with this unique,&nbsp;</span><strong>limited edition</strong><span>&nbsp;t-shirt. This design is part of a limited run, numbered drop at the June 2021 Next.js Conf. It features a unique, handcrafted triangle design. Get it while supplies last – only 200 of these shirts will be made!&nbsp;</span><strong>All proceeds will be donated to charity.</strong></p>",
+      "path": "/licuadora-lc-2007",
+      "slug": "licuadora-lc-2007",
+      "price": { "value": 11775, "currencyCode": "ARS" },
+      "descriptionHtml": "<p><span>Licuadora Ultracomb,&nbsp;</span><strong>Jarra plástica graduada de 1,5 lts.</strong><span>&nbsp; Motor Ultra Potente 650W. 2 Velocidades + pulsador (auto limpieza y batido espeso). Porta cuchillas y cuchillas (4 hojas) de acero inoxidable. Tapa con sistema anti derrame. Sobretapa para inspección y dosificador. Soportes antideslizantes. Elegante diseño y sólida construcción. Prepara rápidamente infinidad de batidos, cócteles, cremas y salsas. Es ideal para para quienes llevan una vida sana!.</strong></p>",
+      "description": "Elegante diseño y sólida construcción. 2 Velocidades + pulsador (auto limpieza y batido espeso).",
+      "specification": "Promociones: Temporada de descuentos. Capacidad: 1,5 litros. Material: Plástico. Potencia: 650W. Funciones: 2 Velocidades + pulsador (auto limpieza y batido espeso). Niveles: 2 Velocidades. Tipo de Montaje: Sobre mesa. Accesorios incluidos: No. Tipo: Licuadora de mesa. Financiacion: 6.",
+      "rate": 5,
       "images": [
         {
-          "url": "/assets/lightweight-jacket-0.png",
-          "altText": "Lightweight Jacket",
+          "url": "/assets/licuadoralc2007.jpeg",
+          "altText": "Licuadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/lightweight-jacket-1.png",
-          "altText": "Lightweight Jacket",
+          "url": "/assets/licuadoralc2007-1.jpeg",
+          "altText": "Licuadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/lightweight-jacket-2.png",
-          "altText": "Lightweight Jacket",
+          "url": "/assets/licuadoralc2007-2.jpeg",
+          "altText": "Licuadora",
           "width": 1000,
           "height": 1000
         }
@@ -133,7 +137,7 @@
         },
         {
           "id": "option-size",
-          "displayName": "Size",
+          "displayName": "Tamaño",
           "values": [
             {
               "label": "S"
@@ -150,40 +154,31 @@
     },
     {
       "id": "Z2lkOis8vc2hvcGlmsddeS9Qcm9kdWN0LzU0NDczMjUwMjQ0MjA=",
-      "name": "Shirt",
+      "name": "Multiprocesadora 600W PC-6800",
       "vendor": "Next.js",
-      "path": "/shirt",
-      "slug": "shirt",
-      "price": { "value": 25, "currencyCode": "USD" },
-      "descriptionHtml": "<p><span>Show off your love for Next.js and Vercel with this unique,&nbsp;</span><strong>limited edition</strong><span>&nbsp;t-shirt. This design is part of a limited run, numbered drop at the June 2021 Next.js Conf. It features a unique, handcrafted triangle design. Get it while supplies last – only 200 of these shirts will be made!&nbsp;</span><strong>All proceeds will be donated to charity.</strong></p>",
+      "path": "/picadora-pc-6800",
+      "slug": "picadora-pc-6800",
+      "price": { "value": 9602, "currencyCode": "ARS" },
+      "descriptionHtml": "<p><span>Picadora de alimentos,&nbsp;</span><strong>PC 6800</strong><span>&nbsp;. Potencia: 600WBol de vidrio con capacidad de 1.2 lts. Cuchillas de acero inoxidableSwitch de seguridad (evita que el motor funcione si el  bol no se coloca correctamente). Apoyo desmontable de silicona.</strong></p>",
+      "description": "Mango de diseño ergonómico, brinda mayor control de la máquina. 5 Velocidades.",
+      "specification": "Promociones: Temporada de descuentos. Capacidad: 1,2 litros. Material: Plástico / Vidrio / Acero Inox. Potencia: 600W. Alimentación: 220V 50Hz. Funciones: Picadora 2 velocidades. Tipo de Montaje: Sobre mesa. Accesorios incluidos: Apoyo desmontable de silicona. Niveles de potencia: 2. Financiacion: 6.",
+      "rate": 5,
       "images": [
         {
-          "url": "/assets/t-shirt-0.png",
-          "altText": "Shirt",
+          "url": "/assets/picadorapc6800.png",
+          "altText": "Picadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/t-shirt-1.png",
-          "altText": "Shirt",
+          "url": "/assets/picadorapc6800-1.png",
+          "altText": "Picadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/t-shirt-2.png",
-          "altText": "Shirt",
-          "width": 1000,
-          "height": 1000
-        },
-        {
-          "url": "/assets/t-shirt-3.png",
-          "altText": "Shirt",
-          "width": 1000,
-          "height": 1000
-        },
-        {
-          "url": "/assets/t-shirt-4.png",
-          "altText": "Shirt",
+          "url": "/assets/picadorapc6800-2.png",
+          "altText": "Picadora",
           "width": 1000,
           "height": 1000
         }
@@ -218,7 +213,7 @@
         },
         {
           "id": "option-size",
-          "displayName": "Size",
+          "displayName": "Tamaño",
           "values": [
             {
               "label": "S"
