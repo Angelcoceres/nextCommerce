@@ -18,15 +18,7 @@ const ProductTag: React.FC<ProductTagProps> = ({
   return (
     <div className={cn(s.root, className)}>
       <h3 className={s.name}>
-        <span
-          className={cn({ [s.fontsizing]: fontSize < 32 })}
-          style={{
-            fontSize: `${fontSize}px`,
-            lineHeight: `${fontSize}px`,
-          }}
-        >
-          {name}
-        </span>
+        <span>{name}</span>
       </h3>
       <div className={s.price}>{price}</div>
     </div>
