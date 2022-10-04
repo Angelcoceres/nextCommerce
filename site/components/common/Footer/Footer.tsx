@@ -29,25 +29,8 @@ const Footer: FC<Props> = ({ className, pages }) => {
   return (
     <footer className={rootClassName}>
       <Container>
-        <div className="pt-6 pb-10 flex flex-col md:flex-row justify-between items-center space-y-4 text-accent-6 text-sm">
-          <div>
-            <span>&copy; 2022. Todos los derechos reservados.</span>
-          </div>
-          <div className="flex items-center text-primary text-sm">
-            <span className="text-primary">Creado con</span>
-            <a
-              rel="noopener noreferrer"
-              href="https://vercel.com"
-              aria-label="Vercel.com Link"
-              target="_blank"
-              className="text-primary"
-            >
-              <Vercel
-                className="inline-block h-6 ml-3 text-primary"
-                alt="Vercel.com Logo"
-              />
-            </a>
-          </div>
+        <div className="pt-6 pb-6 flex flex-col md:flex-row justify-center items-center space-y-4 text-accent-6 text-sm">
+          <span>&copy; 2022. Todos los derechos reservados.</span>
         </div>
       </Container>
     </footer>
