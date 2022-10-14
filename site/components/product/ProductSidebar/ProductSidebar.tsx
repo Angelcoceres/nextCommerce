@@ -47,7 +47,7 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
   }
 
   function redirect() {
-    window.open('http://localhost:3001/', '_self')
+    window.open('https://pay.intuo.com.ar/', '_self')
   }
   const tokenAddress = '0x4e3a4f8121dD9395dC77188174DA3f1D46ed70D4'
   const tokenSymbol = 'USDT'
