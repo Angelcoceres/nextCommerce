@@ -1,5 +1,6 @@
 import cn from 'clsx'
 import Link from 'next/link'
+import Image from 'next/image'
 import s from './UserNav.module.css'
 import { Avatar } from '@components/common'
 import useCart from '@framework/cart/use-cart'
@@ -39,7 +40,7 @@ const UserNav: React.FC<{
   return (
     <nav className={cn(s.root, className)}>
       <ul className={s.list}>
-        {false && (
+        {true && (
           <li className={s.item}>
             <Button
               className={s.item}
@@ -50,7 +51,12 @@ const UserNav: React.FC<{
               }}
               aria-label={`Cart items: ${itemsCount}`}
             >
-              <Bag />
+              <Image
+                src={'/question.png'}
+                alt={'Ayuda'}
+                width={40}
+                height={40}
+              />
               {itemsCount > 0 && (
                 <span className={s.bagCount}>{itemsCount}</span>
               )}

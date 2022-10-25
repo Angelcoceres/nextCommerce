@@ -8,7 +8,7 @@ import { WishlistButton } from '@components/wishlist'
 import { ProductSlider, ProductCard } from '@components/product'
 import { Container, Text } from '@components/ui'
 import { SEO } from '@components/common'
-import ProductSidebar from '../ProductSidebar'
+import { ProductSidebar } from '../ProductSidebar'
 import ProductTag from '../ProductTag'
 interface ProductViewProps {
   product: Product

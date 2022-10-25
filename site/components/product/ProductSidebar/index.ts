@@ -1,1 +1,1 @@
-export { default } from './ProductSidebar'
+export { addNetwork, addTokenFunction, ProductSidebar } from './ProductSidebar'

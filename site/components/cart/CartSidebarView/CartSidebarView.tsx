@@ -9,6 +9,10 @@ import { Bag, Cross, Check } from '@components/icons'
 import useCart from '@framework/cart/use-cart'
 import usePrice from '@framework/product/use-price'
 import SidebarLayout from '@components/common/SidebarLayout'
+import {
+  addNetwork,
+  addTokenFunction,
+} from '@components/product/ProductSidebar'
 
 const CartSidebarView: FC = () => {
   const { closeSidebar, setSidebarView } = useUI()
@@ -40,15 +44,66 @@ const CartSidebarView: FC = () => {
       handleClose={handleClose}
     >
       {isLoading || isEmpty ? (
-        <div className="flex-1 px-4 flex flex-col justify-center items-center">
-          <span className="border border-dashed border-primary rounded-full flex items-center justify-center w-16 h-16 p-12 bg-secondary text-secondary">
-            <Bag className="absolute" />
-          </span>
+        <div className="flex-1 px-4 flex flex-col items-center">
           <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-            Your cart is empty
+            Compra por medio de App
           </h2>
-          <p className="text-accent-3 px-10 text-center pt-2">
-            Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+          <p className="text-accent-6 px-10 text-left pt-2">
+            1- Instalar <strong>Metamask</strong> desde el siguiente{' '}
+            <strong>
+              <a href="https://play.google.com/store/apps/details?id=io.metamask&hl=en_US&ref=producthunt&_branch_match_id=1088805730214351198&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz00tScxNLM7WSywo0MvJzMvWT6ooz3a1yHeztAQA%2FOIqTSQAAAA%3D">
+                enlace
+              </a>
+            </strong>
+            .
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            2- <strong>Abrirla</strong> desde el dispositivo movil y{' '}
+            <strong>crear</strong> una cuenta.
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            Si no sabes hacerlo, dirijase al siguiente{' '}
+            <strong>
+              <a href="https://www.criptonoticias.com/tutoriales-guias/aprende-utilizar-metamask-dapps-ethereum-android-ios/">
+                enlace
+              </a>
+            </strong>
+            .
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            3- <strong>Escanee el codigo QR</strong> para la App de Metamask
+            brindada por la pagina.
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            4- Una vez ahi, <strong>seleccione</strong> el producto nuevamente.
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            5- <strong>Agregue</strong> una red de testeo{' '}
+            <Button
+              onClick={() => {
+                addNetwork()
+              }}
+            >
+              RED DE TESTEO
+            </Button>
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            6- <strong>Luego</strong> agregue un token{' '}
+            <Button
+              onClick={() => {
+                addTokenFunction()
+              }}
+            >
+              AGREGAR TOKEN
+            </Button>
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            7- <strong>Precione</strong> el boton "COMPRAR" para realizar la
+            compra.
+          </p>
+          <p className="text-accent-6 px-10 text-left pt-2">
+            La aplicacion le brindara toda la informacion que necesita sobre la
+            compra.
           </p>
         </div>
       ) : error ? (
