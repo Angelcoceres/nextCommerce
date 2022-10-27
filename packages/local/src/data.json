@@ -13,19 +13,19 @@
       "rate": 5,
       "images": [
         {
-          "url": "/assets/batidorabm2608.png",
+          "url": "http://localhost:3001/assets/batidorabm2608.png",
           "altText": "Batidora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/batidorabm2608-1.png",
+          "url": "http://localhost:3001/assets/batidorabm2608-1.png",
           "altText": "Batidora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/batidorabm2608-2.png",
+          "url": "http://localhost:3001/assets/batidorabm2608-2.png",
           "altText": "Batidora",
           "width": 1000,
           "height": 1000
@@ -89,19 +89,19 @@
       "rate": 5,
       "images": [
         {
-          "url": "/assets/licuadoralc2007.jpeg",
+          "url": "http://localhost:3001/assets/licuadoralc2007.jpeg",
           "altText": "Licuadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/licuadoralc2007-1.jpeg",
+          "url": "http://localhost:3001/assets/licuadoralc2007-1.jpeg",
           "altText": "Licuadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/licuadoralc2007-2.jpeg",
+          "url": "http://localhost:3001/assets/licuadoralc2007-2.jpeg",
           "altText": "Licuadora",
           "width": 1000,
           "height": 1000
@@ -165,19 +165,19 @@
       "rate": 5,
       "images": [
         {
-          "url": "/assets/picadorapc6800.png",
+          "url": "http://localhost:3001/assets/picadorapc6800.png",
           "altText": "Picadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/picadorapc6800-1.png",
+          "url": "http://localhost:3001/assets/picadorapc6800-1.png",
           "altText": "Picadora",
           "width": 1000,
           "height": 1000
         },
         {
-          "url": "/assets/picadorapc6800-2.png",
+          "url": "http://localhost:3001/assets/picadorapc6800-2.png",
           "altText": "Picadora",
           "width": 1000,
           "height": 1000
