@@ -1,9 +1,10 @@
 import cn from 'clsx'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FC } from 'react'
 import s from './CartSidebarView.module.css'
 import CartItem from '../CartItem'
-import { Button, Text } from '@components/ui'
+import { Button, Text, Collapse } from '@components/ui'
 import { useUI } from '@components/ui/context'
 import { Bag, Cross, Check } from '@components/icons'
 import useCart from '@framework/cart/use-cart'
@@ -62,18 +63,23 @@ const CartSidebarView: FC = () => {
             <strong>crear</strong> una cuenta.
           </p>
           <p className="text-accent-6 px-10 text-left pt-2">
-            Si no sabes hacerlo, dirijase al siguiente{' '}
+            Si no sabe hacerlo, dirijase al siguiente{' '}
             <strong>
-              <a href="https://www.criptonoticias.com/tutoriales-guias/aprende-utilizar-metamask-dapps-ethereum-android-ios/">
-                enlace
-              </a>
+              <Link href={'/ayuda/metamask'}>
+                <a>enlace</a>
+              </Link>
             </strong>
             .
           </p>
           <p className="text-accent-6 px-10 text-left pt-2">
-            3- <strong>Escanee el codigo QR</strong> para la App de Metamask
-            brindada por la pagina.
+            3- <strong>Escanee el siguiente codigo QR</strong> para la App de
+            Metamask.
           </p>
+          <div>
+            <Collapse title="Codigo QR">
+              <Image src={'/linkMetamaskStore.jpeg'} width={300} height={300} />
+            </Collapse>
+          </div>
           <p className="text-accent-6 px-10 text-left pt-2">
             4- Una vez ahi, <strong>seleccione</strong> el producto nuevamente.
           </p>
@@ -103,8 +109,9 @@ const CartSidebarView: FC = () => {
           </p>
           <p className="text-accent-6 px-10 text-left pt-2">
             La aplicacion le brindara toda la informacion que necesita sobre la
-            compra.
+            compra del producto.
           </p>
+          <br></br>
         </div>
       ) : error ? (
         <div className="flex-1 px-4 flex flex-col justify-center items-center">

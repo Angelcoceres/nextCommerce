@@ -118,7 +118,7 @@ export const ProductSidebar: FC<ProductSidebarProps> = ({
     <div className={className}>
       <Text
         className="pb-4 break-words w-full max-w-xl"
-        html={product.descriptionHtml || product.description}
+        html={product.descriptionHtml}
       />
       <div>
         {true && (
@@ -163,16 +163,8 @@ export const ProductSidebar: FC<ProductSidebarProps> = ({
         )}
       </div>
       <div className="mt-6">
-        {movile && (
-          <Collapse title="QR de pago">
-            <Image src={'/metamask-qr.jpeg'} width={300} height={300} />
-          </Collapse>
-        )}
-        {true && (
-          <Collapse title="QR para App Metamask">
-            <Image src={'/linkMetamaskStore.png'} width={300} height={300} />
-          </Collapse>
-        )}
+        <Collapse title="Especificaciones">{product.specification}</Collapse>
+        <Collapse title="Descripcion corta">{product.description}</Collapse>
       </div>
     </div>
   )
