@@ -76,17 +76,18 @@ export const ProductSidebar: FC<ProductSidebarProps> = ({
   product,
   className,
 }) => {
-  let movile = false
-  //if (window.screen.width < 800) movile = true
-  //else movile = false
+  let mobile = false
+  //if (window.screen.width < 800) mobile = true
+  //else mobile = false
 
   function redirect() {
+    const id = product.id
     if (screen.width < 800)
       window.open(
         'https://metamask.app.link/send/pay-0x4e3a4f8121dD9395dC77188174DA3f1D46ed70D4/transfer?address=0x4a218f824d2Cc4414702FC5420391B2356b51D5b&uint256=3.2e19',
         '_self'
       )
-    else window.open('https://pay.intuo.com.ar/', '_self')
+    else window.open(`https://pay.intuo.com.ar/${id}`, '_self')
   }
 
   const addItem = useAddItem()
@@ -131,34 +132,6 @@ export const ProductSidebar: FC<ProductSidebarProps> = ({
             disabled={variant?.availableForSale === false}
           >
             {variant?.availableForSale === false ? 'No disponible' : 'Comprar'}
-          </Button>
-        )}
-        {movile && (
-          <Button
-            aria-label="Agregar red de testing"
-            type="button"
-            className={s.button}
-            onClick={() => addNetwork()}
-            loading={loading}
-            disabled={variant?.availableForSale === false}
-          >
-            {variant?.availableForSale === false
-              ? 'No disponible'
-              : 'Red de Testeo'}
-          </Button>
-        )}
-        {movile && (
-          <Button
-            aria-label="Agregar Token a Metamask"
-            type="button"
-            className={s.button}
-            onClick={() => addTokenFunction()}
-            loading={loading}
-            disabled={variant?.availableForSale === false}
-          >
-            {variant?.availableForSale === false
-              ? 'No disponible'
-              : 'Agregar Token'}
           </Button>
         )}
       </div>

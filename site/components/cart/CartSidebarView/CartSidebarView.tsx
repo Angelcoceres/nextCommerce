@@ -77,7 +77,11 @@ const CartSidebarView: FC = () => {
           </p>
           <div>
             <Collapse title="Codigo QR">
-              <Image src={'/linkMetamaskStore.jpeg'} width={300} height={300} />
+              <Image
+                src={'/metamask/link-metamask-store.jpeg'}
+                width={300}
+                height={300}
+              />
             </Collapse>
           </div>
           <p className="text-accent-6 px-10 text-left pt-2">
