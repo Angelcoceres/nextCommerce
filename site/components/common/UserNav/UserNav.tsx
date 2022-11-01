@@ -14,6 +14,7 @@ import {
   DropdownTrigger as DropdownTriggerInst,
   Button,
 } from '@components/ui'
+
 import type { LineItem } from '@commerce/types/cart'
 
 const countItem = (count: number, item: LineItem) => count + item.quantity
@@ -71,7 +72,7 @@ const UserNav: React.FC<{
             </Link>
           </li>
         )}
-        {true && (
+        {false && (
           <li className={s.item}>
             <Dropdown>
               <DropdownTrigger>
