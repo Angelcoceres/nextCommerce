@@ -90,6 +90,33 @@ export const ProductSidebar: FC<ProductSidebarProps> = ({
     else window.open(`https://pay.intuo.com.ar/${id}`, '_self')
   }
 
+  async function fetchPost() {
+    const data = {
+      client: "Argul",
+      pass: "5491100000000",
+      product: "Batidora De Mano 500w 220v BM-2608",
+      image: "https://store.intuo.com.ar/assets/batidorabm2608.png",
+      price: "32",
+      currencyCode: "USD",
+      description: "Mango de diseño ergonómico, brinda mayor control de la máquina. 5 Velocidades"
+    };
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify( data )
+    };
+    try {
+      const response = await fetch('http://localhost:3000/api/client', requestOptions);
+      if (response.ok) {
+        console.log(response);
+      } else {
+        console.log('Respuesta de red OK pero respuesta de HTTP no OK');
+      }
+    } catch (error) {
+      console.log('Hubo un problema con la petición Fetch:' + error);
+    }
+  }
+  
   const addItem = useAddItem()
   const { openSidebar, setSidebarView } = useUI()
   const [loading, setLoading] = useState(false)
@@ -127,7 +154,7 @@ export const ProductSidebar: FC<ProductSidebarProps> = ({
             aria-label="Comprar"
             type="button"
             className={s.button}
-            onClick={() => redirect()}
+            onClick={() => fetchPost()}
             loading={loading}
             disabled={variant?.availableForSale === false}
           >
